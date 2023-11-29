@@ -1,0 +1,26 @@
+﻿<Page x:Class="WPFTETRIS.MutiPlay"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFTETRIS"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MutiPlay" Background="Black">
+    <Grid x:Name="single">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="Tetris1" Grid.Column="0">
+            <Frame x:Name="T_Board1" NavigationUIVisibility="Hidden" Source="/Tetris_Board.xaml" />
+        </Grid>
+        <Grid Name="Score" Grid.Column="1">
+            <Frame x:Name="S_Board" NavigationUIVisibility="Hidden" Source="/Score_Board.xaml"/>
+        </Grid>
+        <Grid x:Name="Tetris2" Grid.Column="2">
+            <Frame x:Name="T_Board2" NavigationUIVisibility="Hidden" Source="/Tetris_Board.xaml"/>
+        </Grid>
+    </Grid>
+</Page>
